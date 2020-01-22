@@ -8,6 +8,7 @@ const CommentSection = props => {
   // Add state for the comments
 
   return (
+    console.log(props);
     <div>
       {/* map through the comments data and return the Comment component */}
       <CommentInput />
