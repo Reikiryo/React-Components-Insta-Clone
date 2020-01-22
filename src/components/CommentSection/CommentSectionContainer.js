@@ -10,7 +10,7 @@ const CommentSection = props => {
   return (
     <div>
       {props.comments.map(p => (
-        <Comment comment={p}/>
+        <Comment key={p.comments} comment={p}/>
       ))}
       <CommentInput />
     </div>

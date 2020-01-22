@@ -12,7 +12,7 @@ const PostsPage = (props) => {
       {props.Data.map(p => (
         //console.log(p);
         <div className="box">
-        <Post post={p}/> 
+        <Post key={p.imageUrl} post={p}/> 
         </div>
       ))}
     </div>
