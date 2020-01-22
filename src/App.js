@@ -8,6 +8,7 @@ import React, {useState} from "react";
 import "./App.css";
 import PostsPage from "./components/PostsContainer/PostsPage"
 import dummyData from "./dummy-data"
+import SearchBar from "./components/SearchBar/SearchBarContainer"
 
 // import the PostsPage and SearchBar and add them to the App
 // import dummydata
@@ -17,6 +18,7 @@ const App = () => {
   const [data] = useState(dummyData)
   return (
     <div className="App">
+      <SearchBar/>
       <PostsPage Data={data}/>
     </div>
   );
